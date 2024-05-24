@@ -3,8 +3,27 @@ public class Book {
     private int pages;
     private int releaseYear;
 
+//  Tuščias konstruktorius
     public Book() {
     }
+
+//  Pilnas konstruktorius
+    public Book(String title, int pages, int releaseYear) {
+        this.title = title;
+        this.pages = pages;
+        this.releaseYear = releaseYear;
+    }
+
+//  Naudojama For
+    @Override
+    public String toString() {
+        return "Book{" +
+                "title='" + title + '\'' +
+                ", pages=" + pages +
+                ", releaseYear=" + releaseYear +
+                '}';
+    }
+
     public void listBook() {
         System.out.println();
         System.out.println("---------------------");
@@ -14,13 +33,7 @@ public class Book {
         System.out.println("---------------------");
     }
 
-//    public Book(String title, int pages, int releaseYear) {
-//        this.title = title;
-//        this.pages = pages;
-//        this.releaseYear = releaseYear;
-//    }
-
-
+//  Reikalingas tuščiam konstruktoriui
     public void setTitle(String title) {
         this.title = title;
     }
@@ -31,15 +44,17 @@ public class Book {
         this.releaseYear = releaseYear;
     }
 
-//    public String getTitle() {
-//        return this.title;
-//    }
-//    public int getPages() {
-//        return this.pages;
-//    }
-//    public int getReleaseYear() {
-//        return  this.releaseYear;
-//    }
+
+//  Reikalingas pilnam konstruktoriui
+    public String getTitle() {
+        return this.title;
+    }
+    public int getPages() {
+        return this.pages;
+    }
+    public int getReleaseYear() {
+        return  this.releaseYear;
+    }
 
 
 
