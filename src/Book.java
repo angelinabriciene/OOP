@@ -33,7 +33,7 @@ public class Book {
         System.out.println("---------------------");
     }
 
-//  Reikalingas tuščiam konstruktoriui
+//  Naudinga bet kokiam konstruktoriui
     public void setTitle(String title) {
         this.title = title;
     }
@@ -45,7 +45,7 @@ public class Book {
     }
 
 
-//  Reikalingas pilnam konstruktoriui
+//  Naudinga bet kokiam konstruktoriui
     public String getTitle() {
         return this.title;
     }
@@ -55,7 +55,5 @@ public class Book {
     public int getReleaseYear() {
         return  this.releaseYear;
     }
-
-
 
 }
